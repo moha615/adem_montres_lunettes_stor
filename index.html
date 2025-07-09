@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>adem_montres_lunettes_stor</title>
+  <title>Adem Watches & Glasses</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background: linear-gradient(to bottom right, #f4f1ee, #e5dfd9);
+      color: #2c2c2c;
     }
     header {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
+      background-color: #2d2a26;
+      color: #f9f6f2;
+      padding: 30px 20px;
       text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #222;
+      background-color: #3a3732;
       flex-wrap: wrap;
     }
     nav a {
-      color: white;
+      color: #fff;
       padding: 15px 20px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
     nav a:hover {
-      background-color: #444;
+      background-color: #5a534a;
+      border-radius: 5px;
     }
     .hero {
       background: url('https://images.unsplash.com/photo-1516728778615-2d590ea1856f') no-repeat center center/cover;
@@ -43,6 +47,9 @@
     }
     .hero h1 {
       font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
     }
     .section {
       padding: 40px 20px;
@@ -50,127 +57,90 @@
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
       padding: 20px;
     }
     .product {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
       padding: 20px;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .product:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     .product img {
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
     }
     .buy-button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #111;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: #2d2a26;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
     .buy-button:hover {
-      background-color: #333;
+      background-color: #4e4840;
     }
     footer {
-      background-color: #111;
+      background-color: #2d2a26;
       color: #ccc;
       text-align: center;
-      padding: 20px;
+      padding: 25px 10px;
       font-size: 0.9rem;
-    }
-    .login {
-      text-align: center;
-      padding: 30px;
-    }
-    .login input {
-      padding: 10px;
-      margin: 10px;
-      width: 200px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .login button {
-      padding: 10px 20px;
-      background-color: #111;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .login button:hover {
-      background-color: #333;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>adem_montres_lunettes_stor</h1>
+    Adem Watches & Glasses
   </header>
   <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#products">المنتجات</a>
-    <a href="#about">من نحن</a>
-    <a href="#contact">اتصل بنا</a>
-    <a href="#login">تسجيل الدخول</a>
-    <a href="english.html">English</a>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="index.html">العربية</a>
   </nav>
   <div class="hero">
-    <h1>اكتشف الفخامة في كل نظرة وكل لحظة</h1>
+    <h1>Discover elegance in every look and every moment</h1>
   </div>
   <div id="products" class="section">
-    <h2>منتجاتنا</h2>
+    <h2>Our Featured Products</h2>
     <div class="products">
       <div class="product">
-        <img src="/mnt/data/1.jpg" alt="نظارات شمسية سوداء">
-        <h3>نظارات رايبان سوداء</h3>
-        <p>نظارات شمسية بتصميم كلاسيكي أنيق</p>
-        <p><strong>السعر:</strong> 4500 دج</p>
-        <a class="buy-button" href="https://wa.me/213557287895?text=أرغب%20في%20شراء%20نظارات%20رايبان%20سوداء">اطلب الآن</a>
+        <img src="1.jpg" alt="Black Ray-Ban Sunglasses">
+        <h3>Black Ray-Ban Sunglasses</h3>
+        <p>Classic and stylish black lens design</p>
+        <p><strong>Price:</strong> 4500 DZD</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=I%20want%20to%20buy%20the%20black%20Ray-Ban%20sunglasses">Order Now</a>
       </div>
       <div class="product">
-        <img src="/mnt/data/2.jpg" alt="نظارات شمسية بعدسة فاتحة">
-        <h3>نظارات رايبان بعدسة فاتحة</h3>
-        <p>عدسات مريحة وشفافة لإطلالة مميزة</p>
-        <p><strong>السعر:</strong> 4300 دج</p>
-        <a class="buy-button" href="https://wa.me/213XXXXXXXXX?text=أرغب%20في%20شراء%20نظارات%20رايبان%20فاتحة">اطلب الآن</a>
+        <img src="2.jpg" alt="Light Lens Ray-Ban">
+        <h3>Light Lens Ray-Ban</h3>
+        <p>Comfortable and stylish with clear lenses</p>
+        <p><strong>Price:</strong> 4300 DZD</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=I%20want%20to%20buy%20the%20light%20lens%20Ray-Ban">Order Now</a>
       </div>
       <div class="product">
-        <img src="/mnt/data/3.jpg" alt="نظارات شمسية زرقاء">
-        <h3>نظارات رايبان زرقاء</h3>
-        <p>إطلالة عصرية بعدسات داكنة</p>
-        <p><strong>السعر:</strong> 4700 دج</p>
-        <a class="buy-button" href="https://wa.me/213XXXXXXXXX?text=أرغب%20في%20شراء%20نظارات%20رايبان%20زرقاء">اطلب الآن</a>
+        <img src="3.jpg" alt="Blue Ray-Ban Sunglasses">
+        <h3>Blue Ray-Ban Sunglasses</h3>
+        <p>Trendy look with dark blue lenses</p>
+        <p><strong>Price:</strong> 4700 DZD</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=I%20want%20to%20buy%20the%20blue%20Ray-Ban%20sunglasses">Order Now</a>
       </div>
     </div>
   </div>
-  <div id="about" class="section">
-    <h2>من نحن</h2>
-    <p>متجر متخصص في بيع الساعات والنظارات الراقية التي تعكس ذوقك وأناقتك. نختار لك الأفضل دائمًا.</p>
-  </div>
-  <div id="contact" class="section">
-    <h2>اتصل بنا</h2>
-    <p>راسلنا على <a href="mailto:contact@example.com">contact@example.com</a> أو على واتساب: <a href="https://wa.me/213557287895">+1234567890</a></p>
-  </div>
-  <div id="login" class="login">
-    <h2>تسجيل الدخول</h2>
-    <input type="text" placeholder="البريد الإلكتروني">
-    <input type="password" placeholder="كلمة المرور">
-    <button>دخول</button>
-  </div>
   <footer>
-    &copy; 2025 جميع الحقوق محفوظة - adem_montres_lunettes_stor
+    &copy; 2025 adem_montres_lunettes_stor - All rights reserved. Contact: +213557287895
   </footer>
 </body>
 </html>
